@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.52.1-alpha.0 (2023-02-01)
+
+
+### Bug Fixes
+
+* Add some code splitting for PWA build ([#937](https://github.com/OHIF/Viewers/issues/937)) ([8938035](https://github.com/OHIF/Viewers/commit/89380353d270cbb89d0c60290a1210f7ac8baa7a))
+* measurementsAPI issue caused by production build ([#842](https://github.com/OHIF/Viewers/issues/842)) ([49d3439](https://github.com/OHIF/Viewers/commit/49d343941e236e442114e59861a373c7edb0b1fb))
+* simplify runtime-extension usage ([ac5dbda](https://github.com/OHIF/Viewers/commit/ac5dbda3b27e5c9600baa2c9d2b52947282e3399))
+* **dicom-microscopy:** Update dicom-microscopy-viewer to 0.6.1 to fix Google Cloud usage with WSI images ([#843](https://github.com/OHIF/Viewers/issues/843)) ([dbaf5c5](https://github.com/OHIF/Viewers/commit/dbaf5c56117cf21fc816467e6029864bc70ca17c))
+
+
+### Features
+
+* **log:** add new log service ([14d6454](https://github.com/OHIF/Viewers/commit/14d6454eafaa2ccb50e133c2945c9558052ea27e))
+* 🎸 1729 - error boundary wrapper ([#1764](https://github.com/OHIF/Viewers/issues/1764)) ([c02b232](https://github.com/OHIF/Viewers/commit/c02b232b0cc24f38af5d5e3831d987d048e60ada))
+
+
+
+
+
+
 # [0.52.0](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-microscopy@0.51.4...@ohif/extension-dicom-microscopy@0.52.0) (2021-03-04)
 
 

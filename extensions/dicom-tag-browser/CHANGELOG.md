@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.2.26-alpha.0 (2023-02-01)
+
+
+### Bug Fixes
+
+* **dicom-html:** Add parsed dicom meta info section ([#2419](https://github.com/OHIF/Viewers/issues/2419)) ([403688b](https://github.com/OHIF/Viewers/commit/403688b18c52468fc1101166ec0c1734fb710039))
+* fallback to original dataset VR for XS ([f57725a](https://github.com/OHIF/Viewers/commit/f57725ac8bfd59ea46ab334a1823882afadefba1))
+
+
+### Features
+
+* add show scroll option to modal ([be494a7](https://github.com/OHIF/Viewers/commit/be494a7376d15777dbe598289c4ecdb9f48a6a48))
+* visualize overlapping segments in cornerstone ([#2185](https://github.com/OHIF/Viewers/issues/2185)) ([29fceac](https://github.com/OHIF/Viewers/commit/29fceacee97d51f1952a0f6b574c66596d32c201))
+
+
+
+
+
+
 ## [0.2.25](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-tag-browser@0.2.24...@ohif/extension-dicom-tag-browser@0.2.25) (2022-12-21)
 
 **Note:** Version bump only for package @ohif/extension-dicom-tag-browser

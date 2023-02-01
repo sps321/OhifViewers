@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.3-alpha.0 (2023-02-01)
+
+
+### Bug Fixes
+
+* 🐛 Add DicomLoaderService & FileLoaderService to fix SR, PDF, and SEG support in local file and WADO-RS-only use cases ([#862](https://github.com/OHIF/Viewers/issues/862)) ([e7e1a8a](https://github.com/OHIF/Viewers/commit/e7e1a8a6cdfcc333c7d2723e156a2760f8fa722e)), closes [#838](https://github.com/OHIF/Viewers/issues/838)
+* 🐛 Update ohif pdf extension to optionally use pdfjs ([#1162](https://github.com/OHIF/Viewers/issues/1162)) ([31e542d](https://github.com/OHIF/Viewers/commit/31e542dfd973c3e982ede6d02d79bfe65175e792)), closes [#1049](https://github.com/OHIF/Viewers/issues/1049)
+* measurementsAPI issue caused by production build ([#842](https://github.com/OHIF/Viewers/issues/842)) ([49d3439](https://github.com/OHIF/Viewers/commit/49d343941e236e442114e59861a373c7edb0b1fb))
+* simplify runtime-extension usage ([ac5dbda](https://github.com/OHIF/Viewers/commit/ac5dbda3b27e5c9600baa2c9d2b52947282e3399))
+
+
+### Features
+
+* Update to WADO Image Loader 4.0.3 to add dynamically imported WebAssembly codec support 🚀 ([#2537](https://github.com/OHIF/Viewers/issues/2537)) ([489d4b0](https://github.com/OHIF/Viewers/commit/489d4b0584f4657ceda1c5b9b68d5e9733827e47))
+
+
+### BREAKING CHANGES
+
+* DICOM Seg
+
+
+
+
+
+
 ## [1.1.2](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-pdf@1.1.1...@ohif/extension-dicom-pdf@1.1.2) (2022-01-29)
 
 **Note:** Version bump only for package @ohif/extension-dicom-pdf

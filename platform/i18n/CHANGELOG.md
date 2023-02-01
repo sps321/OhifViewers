@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.53.1-alpha.0 (2023-02-01)
+
+
+### Bug Fixes
+
+* Add syncTranslations script ([b161016](https://github.com/OHIF/Viewers/commit/b161016edb8808ff0d17ea637820837dca1ca3ce))
+* CineDialog buttons label ([#998](https://github.com/OHIF/Viewers/issues/998)) ([4df624b](https://github.com/OHIF/Viewers/commit/4df624b8c4c3cff40931f12885f80afb902ff078))
+* Combined Hotkeys for special characters ([#1233](https://github.com/OHIF/Viewers/issues/1233)) ([2f30e7a](https://github.com/OHIF/Viewers/commit/2f30e7a821a238144c49c56f37d8e5565540b4bd))
+* download tool fixes & improvements ([#1235](https://github.com/OHIF/Viewers/issues/1235)) ([b9574b6](https://github.com/OHIF/Viewers/commit/b9574b6efcfeb85cde35b5cae63282f8e1b35be6))
+* measurementsAPI issue caused by production build ([#842](https://github.com/OHIF/Viewers/issues/842)) ([49d3439](https://github.com/OHIF/Viewers/commit/49d343941e236e442114e59861a373c7edb0b1fb))
+* minor date picker UX improvements ([813ee5e](https://github.com/OHIF/Viewers/commit/813ee5ed4d78b7bda234922d5f3389efe346451c))
+* translations ([#1234](https://github.com/OHIF/Viewers/issues/1234)) ([30b9e44](https://github.com/OHIF/Viewers/commit/30b9e4422073557287ef26a80b38eeb3f3fcff4c))
+* Update i18n locales to include Japanese ([da725a8](https://github.com/OHIF/Viewers/commit/da725a892382cfed58c534e0b76872a961185006))
+* User Preferences Issues ([#1207](https://github.com/OHIF/Viewers/issues/1207)) ([1df21a9](https://github.com/OHIF/Viewers/commit/1df21a9e075b5e6dfc10a429ae825826f46c71b8)), closes [#1161](https://github.com/OHIF/Viewers/issues/1161) [#1164](https://github.com/OHIF/Viewers/issues/1164) [#1177](https://github.com/OHIF/Viewers/issues/1177) [#1179](https://github.com/OHIF/Viewers/issues/1179) [#1180](https://github.com/OHIF/Viewers/issues/1180) [#1181](https://github.com/OHIF/Viewers/issues/1181) [#1182](https://github.com/OHIF/Viewers/issues/1182) [#1183](https://github.com/OHIF/Viewers/issues/1183) [#1184](https://github.com/OHIF/Viewers/issues/1184) [#1185](https://github.com/OHIF/Viewers/issues/1185)
+
+
+### Features
+
+* **i18n:** Added de (German) translations ([2fff2d5](https://github.com/OHIF/Viewers/commit/2fff2d511fa1d36bdd6476da4ffa5684bf55374f))
+* **i18n:** Added Russian language localization. ([d5b8974](https://github.com/OHIF/Viewers/commit/d5b89748c92c2cf5a88f54ae491adc31a1679705))
+* Add browser info and app version ([#1046](https://github.com/OHIF/Viewers/issues/1046)) ([c217b8b](https://github.com/OHIF/Viewers/commit/c217b8bbdefb7f40c24d460856ec7f4523d70b8a))
+* modal provider ([#1151](https://github.com/OHIF/Viewers/issues/1151)) ([75d88bc](https://github.com/OHIF/Viewers/commit/75d88bc454710d2dcdbc7d68c4d9df041159c840)), closes [#1086](https://github.com/OHIF/Viewers/issues/1086) [#1116](https://github.com/OHIF/Viewers/issues/1116) [#1116](https://github.com/OHIF/Viewers/issues/1116) [#1146](https://github.com/OHIF/Viewers/issues/1146) [#1142](https://github.com/OHIF/Viewers/issues/1142) [#1143](https://github.com/OHIF/Viewers/issues/1143) [#1110](https://github.com/OHIF/Viewers/issues/1110) [#1086](https://github.com/OHIF/Viewers/issues/1086) [#1116](https://github.com/OHIF/Viewers/issues/1116) [#1119](https://github.com/OHIF/Viewers/issues/1119)
+
+
+
+
+
+
 # [0.53.0](https://github.com/OHIF/Viewers/compare/@ohif/i18n@0.52.8...@ohif/i18n@0.53.0) (2020-11-30)
 
 

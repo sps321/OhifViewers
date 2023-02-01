@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.3.25-alpha.0 (2023-02-01)
+
+
+### Bug Fixes
+
+* **dicom-html:** Add parsed dicom meta info section ([#2419](https://github.com/OHIF/Viewers/issues/2419)) ([403688b](https://github.com/OHIF/Viewers/commit/403688b18c52468fc1101166ec0c1734fb710039))
+* 🐛 Add DicomLoaderService & FileLoaderService to fix SR, PDF, and SEG support in local file and WADO-RS-only use cases ([#862](https://github.com/OHIF/Viewers/issues/862)) ([e7e1a8a](https://github.com/OHIF/Viewers/commit/e7e1a8a6cdfcc333c7d2723e156a2760f8fa722e)), closes [#838](https://github.com/OHIF/Viewers/issues/838)
+* 🐛 Disable seg panel when data for seg unavailable ([#1732](https://github.com/OHIF/Viewers/issues/1732)) ([698e900](https://github.com/OHIF/Viewers/commit/698e900b85121d3c2a46747c443ef69fb7a8c95b)), closes [#1728](https://github.com/OHIF/Viewers/issues/1728)
+* 🐛 Proper error handling for derived display sets ([#1708](https://github.com/OHIF/Viewers/issues/1708)) ([5b20d8f](https://github.com/OHIF/Viewers/commit/5b20d8f323e4b3ef9988f2f2ab672d697b6da409))
+* Add some code splitting for PWA build ([#937](https://github.com/OHIF/Viewers/issues/937)) ([8938035](https://github.com/OHIF/Viewers/commit/89380353d270cbb89d0c60290a1210f7ac8baa7a))
+* measurementsAPI issue caused by production build ([#842](https://github.com/OHIF/Viewers/issues/842)) ([49d3439](https://github.com/OHIF/Viewers/commit/49d343941e236e442114e59861a373c7edb0b1fb))
+* set NODE_ENV for production build ([9120db4](https://github.com/OHIF/Viewers/commit/9120db49f186ceb2c02d7b8f99b3bb50910322a4))
+* Set SR viewport as active by interaction ([#1118](https://github.com/OHIF/Viewers/issues/1118)) ([5b33417](https://github.com/OHIF/Viewers/commit/5b334175c370afb930b4b6dbd307ddece8f850e3))
+* simplify runtime-extension usage ([ac5dbda](https://github.com/OHIF/Viewers/commit/ac5dbda3b27e5c9600baa2c9d2b52947282e3399))
+
+
+### Features
+
+* 🎸 DICOM SR STOW on MeasurementAPI ([#954](https://github.com/OHIF/Viewers/issues/954)) ([ebe1af8](https://github.com/OHIF/Viewers/commit/ebe1af8d4f75d2483eba869655906d7829bd9666)), closes [#758](https://github.com/OHIF/Viewers/issues/758)
+* 🎸 Seg jump to slice + show/hide ([835f64d](https://github.com/OHIF/Viewers/commit/835f64d47a9994f6a25aaf3941a4974e215e7e7f))
+* visualize overlapping segments in cornerstone ([#2185](https://github.com/OHIF/Viewers/issues/2185)) ([29fceac](https://github.com/OHIF/Viewers/commit/29fceacee97d51f1952a0f6b574c66596d32c201))
+
+
+### BREAKING CHANGES
+
+* DICOM Seg
+
+
+
+
+
+
 ## [1.3.24](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-html@1.3.23...@ohif/extension-dicom-html@1.3.24) (2022-12-21)
 
 **Note:** Version bump only for package @ohif/extension-dicom-html

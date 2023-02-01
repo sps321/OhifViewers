@@ -3,6 +3,112 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.16.36-alpha.0 (2023-02-01)
+
+
+### Bug Fixes
+
+* [#1075](https://github.com/OHIF/Viewers/issues/1075) Returning to the Study List before all series have finishe… ([#1090](https://github.com/OHIF/Viewers/issues/1090)) ([ecaf578](https://github.com/OHIF/Viewers/commit/ecaf578f92dc40294cec7ff9b272fb432dec4125))
+* [#2964](https://github.com/OHIF/Viewers/issues/2964) Reword message for segmentation error loading due to orientation tolerance ([#3017](https://github.com/OHIF/Viewers/issues/3017)) ([597ac11](https://github.com/OHIF/Viewers/commit/597ac11c4daee1b1e14148804551e20611cfef08))
+* [#2964](https://github.com/OHIF/Viewers/issues/2964) Update message for segmentation error loading due to orientation tolerance ([#2982](https://github.com/OHIF/Viewers/issues/2982)) ([545161d](https://github.com/OHIF/Viewers/commit/545161d5e8d92bb6652f17dc24a36dac8aa7b3a4))
+* 🐛 - Put guards in all places that a cornerstone re-render ([#1899](https://github.com/OHIF/Viewers/issues/1899)) ([451f7ea](https://github.com/OHIF/Viewers/commit/451f7eab9258e7a193eb362e0926b13aedc4b3c9))
+* 🐛 1241: Make Plugin switch part of ToolbarModule ([#1322](https://github.com/OHIF/Viewers/issues/1322)) ([6540e36](https://github.com/OHIF/Viewers/commit/6540e36818944ac2eccc696186366ae495b33a04)), closes [#1241](https://github.com/OHIF/Viewers/issues/1241)
+* 🐛 Add DicomLoaderService & FileLoaderService to fix SR, PDF, and SEG support in local file and WADO-RS-only use cases ([#862](https://github.com/OHIF/Viewers/issues/862)) ([e7e1a8a](https://github.com/OHIF/Viewers/commit/e7e1a8a6cdfcc333c7d2723e156a2760f8fa722e)), closes [#838](https://github.com/OHIF/Viewers/issues/838)
+* 🐛 Disable seg panel when data for seg unavailable ([#1732](https://github.com/OHIF/Viewers/issues/1732)) ([698e900](https://github.com/OHIF/Viewers/commit/698e900b85121d3c2a46747c443ef69fb7a8c95b)), closes [#1728](https://github.com/OHIF/Viewers/issues/1728)
+* 🐛 Fix multiframe images ([#1595](https://github.com/OHIF/Viewers/issues/1595)) ([9e0bd52](https://github.com/OHIF/Viewers/commit/9e0bd52c6a86648eb6673344a8555ad787043e5c))
+* 🐛 Fix RT Panel hide/show and Fix looping load errors ([#1877](https://github.com/OHIF/Viewers/issues/1877)) ([e7cc735](https://github.com/OHIF/Viewers/commit/e7cc735c03d02eeb0d3af4ba02c15ed4f81bbec2))
+* 🐛 Fix seg color load ([#1724](https://github.com/OHIF/Viewers/issues/1724)) ([c4f84b1](https://github.com/OHIF/Viewers/commit/c4f84b1174d04ba84d37ed89b6d7ab541be28181))
+* 🐛 Load default display set when no time metadata ([#1684](https://github.com/OHIF/Viewers/issues/1684)) ([f7b8b6a](https://github.com/OHIF/Viewers/commit/f7b8b6a41c4626084ef56b0fdf7363e914b143c4)), closes [#1683](https://github.com/OHIF/Viewers/issues/1683)
+* 🐛 Multiframe fix ([#1661](https://github.com/OHIF/Viewers/issues/1661)) ([7120561](https://github.com/OHIF/Viewers/commit/71205618ecb8b592247c5acb32284bfe7e18fce5))
+* 🐛 Orthographic MPR fix ([#1092](https://github.com/OHIF/Viewers/issues/1092)) ([460e375](https://github.com/OHIF/Viewers/commit/460e375f0aa75d35f7a46b4d48e6cc706019956d))
+* 🐛 Proper error handling for derived display sets ([#1708](https://github.com/OHIF/Viewers/issues/1708)) ([5b20d8f](https://github.com/OHIF/Viewers/commit/5b20d8f323e4b3ef9988f2f2ab672d697b6da409))
+* 💡 Update log to warn ([#1454](https://github.com/OHIF/Viewers/issues/1454)) ([509a7b7](https://github.com/OHIF/Viewers/commit/509a7b7e57834a0653add98cc320b2a5dbefd51d)), closes [#1451](https://github.com/OHIF/Viewers/issues/1451)
+* 2965 Correct Parsing Logic for Qualitative Instance Level SR ([#2972](https://github.com/OHIF/Viewers/issues/2972)) ([f7db74a](https://github.com/OHIF/Viewers/commit/f7db74a84376598065b6fa2c00cd5735415ff651))
+* Add a fallback metadata provider which pulls metadata from WADO-… ([#1158](https://github.com/OHIF/Viewers/issues/1158)) ([31b1adf](https://github.com/OHIF/Viewers/commit/31b1adfa5993d6c8e3e9c8b03fa9856f2621b037))
+* Add support for single entries in SequenceOfUltrasoundRegions. M… ([#1559](https://github.com/OHIF/Viewers/issues/1559)) ([c1a0d3c](https://github.com/OHIF/Viewers/commit/c1a0d3c662d143b62dfbf1c01f6ce394af3756ca))
+* application crash if patientName is an object ([#1138](https://github.com/OHIF/Viewers/issues/1138)) ([64cf3b3](https://github.com/OHIF/Viewers/commit/64cf3b324da2383a927af1df2d46db2fca5318aa))
+* Avoid using variable name "module" ([#942](https://github.com/OHIF/Viewers/issues/942)) ([72427fe](https://github.com/OHIF/Viewers/commit/72427fe2ff761320254504da892689e00481653b)), closes [#940](https://github.com/OHIF/Viewers/issues/940)
+* avoid-wasteful-renders ([#1544](https://github.com/OHIF/Viewers/issues/1544)) ([e41d339](https://github.com/OHIF/Viewers/commit/e41d339f5faef6b93700bc860f37f29f32ad5ed6))
+* bump cornerstone-tools version in peerDeps ([4afc88c](https://github.com/OHIF/Viewers/commit/4afc88c0e55a84778f5baa8bc2cfadac230099c4))
+* Check for Value in 00081155 sequence (Few patient protocol images doesn't have this value) and removed a duplicate declaration ([#921](https://github.com/OHIF/Viewers/issues/921)) ([d0ec9cf](https://github.com/OHIF/Viewers/commit/d0ec9cf0e036e60c011b78b4d8f1bc49511566ca))
+* Combined Hotkeys for special characters ([#1233](https://github.com/OHIF/Viewers/issues/1233)) ([2f30e7a](https://github.com/OHIF/Viewers/commit/2f30e7a821a238144c49c56f37d8e5565540b4bd))
+* DICOMFileLoadingListener typo in method name ([#2647](https://github.com/OHIF/Viewers/issues/2647)) ([761d54f](https://github.com/OHIF/Viewers/commit/761d54fbbfb376c20ee15794ef7bb7111f64a06f))
+* disable autoFreeze of immer, even in dev mode ([#1560](https://github.com/OHIF/Viewers/issues/1560)) ([d604eba](https://github.com/OHIF/Viewers/commit/d604ebaffd93f688eadd0081e402f27074dd226b))
+* Ensure we take into account pixel spacing fields properly ([#1555](https://github.com/OHIF/Viewers/issues/1555)) ([77ab0ad](https://github.com/OHIF/Viewers/commit/77ab0ad9a14a135b5560741fc1600704df08c141))
+* fallback to original dataset VR for XS ([f57725a](https://github.com/OHIF/Viewers/commit/f57725ac8bfd59ea46ab334a1823882afadefba1))
+* handle missing ReferencedInstanceSequence attribute ([#2786](https://github.com/OHIF/Viewers/issues/2786)) ([4473807](https://github.com/OHIF/Viewers/commit/44738078dbd8dc6b27d2d669e25417e37371f48d))
+* IDC-2288: Update toolbar tabs after derived displayset loaded ([#2307](https://github.com/OHIF/Viewers/issues/2307)) ([6e723eb](https://github.com/OHIF/Viewers/commit/6e723ebced58852007ca553792c740976cfc4201))
+* measurementsAPI issue caused by production build ([#842](https://github.com/OHIF/Viewers/issues/842)) ([49d3439](https://github.com/OHIF/Viewers/commit/49d343941e236e442114e59861a373c7edb0b1fb))
+* MPR metadata parsing for spacings ([#2517](https://github.com/OHIF/Viewers/issues/2517)) ([715dfc5](https://github.com/OHIF/Viewers/commit/715dfc556a3883de31d74012dcc99e431d91f57d))
+* OHIF-1002 Study lazy load should be true by default ([#1004](https://github.com/OHIF/Viewers/issues/1004)) ([66d8bc6](https://github.com/OHIF/Viewers/commit/66d8bc6d6fcd0df158387bb192bd42448421ff3e))
+* Re IDC2797, fix double parsing of SR qualitative annotations ([#2830](https://github.com/OHIF/Viewers/issues/2830)) ([9f813e0](https://github.com/OHIF/Viewers/commit/9f813e0ea08f0aada8efab9ef6228ad90dd1758d))
+* SeriesTime and SeriesDate are only set for the first series and undefined for the remaining ones ([#2476](https://github.com/OHIF/Viewers/issues/2476)) ([6a401c9](https://github.com/OHIF/Viewers/commit/6a401c9e5204cb4f7af6aa33190ad5a8d0879de6))
+* Update fetchPaletteColorLookupTableData: LUT Entries shall be 0 if the table entries value is 2^16 ([#2395](https://github.com/OHIF/Viewers/issues/2395)) ([0ba796c](https://github.com/OHIF/Viewers/commit/0ba796c73c5254f1bc5ac72c58fd06abf19d7102))
+* **dicom-html:** Add parsed dicom meta info section ([#2419](https://github.com/OHIF/Viewers/issues/2419)) ([403688b](https://github.com/OHIF/Viewers/commit/403688b18c52468fc1101166ec0c1734fb710039))
+* **wl:** fix metadata provider window level issues after dicomweb update (string vs number) ([8681036](https://github.com/OHIF/Viewers/commit/8681036b2133cfc325658691a256a86b5e36705f))
+* OverlayPlane module usage for ArrayBuffer, BulkDataURI, and InlineBinary cases, as well as PaletteColor LUTs for ArrayBuffer (i.e. local drag/drop) case ([#1546](https://github.com/OHIF/Viewers/issues/1546)) ([404d52f](https://github.com/OHIF/Viewers/commit/404d52fe5c0442dd13e4d407bb0687d72fa5f32c))
+* remove requestOptions when key is not needed ([32bc47d](https://github.com/OHIF/Viewers/commit/32bc47d31593e55de4db5e92047c38f3223ca9a2))
+* Remove trash data from redux storage after updates ([#1358](https://github.com/OHIF/Viewers/issues/1358)) ([7b2d44f](https://github.com/OHIF/Viewers/commit/7b2d44f2c18241ea521b8d3652aee32e36eaddb8))
+* Return display sets in StudyMetadata._createDisplaySetsForSeries ([#1042](https://github.com/OHIF/Viewers/issues/1042)) ([fc01532](https://github.com/OHIF/Viewers/commit/fc015326c7369aa49cf88b0a07d1be78e60ebca7))
+* Revert "refactor: Reduce bundle size ([#1575](https://github.com/OHIF/Viewers/issues/1575))" ([#1622](https://github.com/OHIF/Viewers/issues/1622)) ([d21af3f](https://github.com/OHIF/Viewers/commit/d21af3f133492fa31492413b8782936c9ff18b44))
+* segmentation not loading ([#1566](https://github.com/OHIF/Viewers/issues/1566)) ([4a7ce1c](https://github.com/OHIF/Viewers/commit/4a7ce1c09324d74c61048393e3a2427757e4001a))
+* set SR in ActiveViewport by clicking thumb ([#1091](https://github.com/OHIF/Viewers/issues/1091)) ([986b7ae](https://github.com/OHIF/Viewers/commit/986b7ae2bf4f7d27f326e62f93285ce20eaf0a79))
+* Set VTK viewport as active by interaction  ([#1139](https://github.com/OHIF/Viewers/issues/1139)) ([686d12d](https://github.com/OHIF/Viewers/commit/686d12da5c9d3d435b1e326c2a5caee36e2ed27c))
+* Switch DICOMFileUploader to use the UIModalService ([#1904](https://github.com/OHIF/Viewers/issues/1904)) ([7772fee](https://github.com/OHIF/Viewers/commit/7772fee21ae6a65994e1251e2f1d2554b47781be))
+* Temporarily sort SEG files to the end of the display set list as a workaround for several metadata issues ([#987](https://github.com/OHIF/Viewers/issues/987)) ([b3b4c10](https://github.com/OHIF/Viewers/commit/b3b4c10e4c620a0bea174c5fb43ffd69de37541b))
+* use bit-appropriate array for palette lookup tables ([#1698](https://github.com/OHIF/Viewers/issues/1698)) ([7033886](https://github.com/OHIF/Viewers/commit/70338866978a76fa026c18d7c3c05257c5ece762))
+* use SeriesMetadata method instead of property in findMostRecentStructuredReport ([#2038](https://github.com/OHIF/Viewers/issues/2038)) ([91364db](https://github.com/OHIF/Viewers/commit/91364db8820efc86665db258d0044c16fb3e2c87)), closes [#1714](https://github.com/OHIF/Viewers/issues/1714)
+* User Preferences Issues ([#1207](https://github.com/OHIF/Viewers/issues/1207)) ([1df21a9](https://github.com/OHIF/Viewers/commit/1df21a9e075b5e6dfc10a429ae825826f46c71b8)), closes [#1161](https://github.com/OHIF/Viewers/issues/1161) [#1164](https://github.com/OHIF/Viewers/issues/1164) [#1177](https://github.com/OHIF/Viewers/issues/1177) [#1179](https://github.com/OHIF/Viewers/issues/1179) [#1180](https://github.com/OHIF/Viewers/issues/1180) [#1181](https://github.com/OHIF/Viewers/issues/1181) [#1182](https://github.com/OHIF/Viewers/issues/1182) [#1183](https://github.com/OHIF/Viewers/issues/1183) [#1184](https://github.com/OHIF/Viewers/issues/1184) [#1185](https://github.com/OHIF/Viewers/issues/1185)
+* whiteLabeling should support component creation by passing React to defined fn ([#1659](https://github.com/OHIF/Viewers/issues/1659)) ([2093a00](https://github.com/OHIF/Viewers/commit/2093a0036584b2cc698c8f06fe62b334523b1029))
+* **Studies:** Qidosupportsincludefield should be true by default ([#801](https://github.com/OHIF/Viewers/issues/801)) ([a88d865](https://github.com/OHIF/Viewers/commit/a88d865a9b55131ebb5c6144591ad5134e994d50))
+
+
+### Features
+
+* [#1342](https://github.com/OHIF/Viewers/issues/1342) - Window level tab ([#1429](https://github.com/OHIF/Viewers/issues/1429)) ([ebc01a8](https://github.com/OHIF/Viewers/commit/ebc01a8ca238d5a3437b44d81f75aa8a5e8d0574))
+* 🎸 Allow routes to load Google Cloud DICOM Stores in the Study List ([#1069](https://github.com/OHIF/Viewers/issues/1069)) ([21b586b](https://github.com/OHIF/Viewers/commit/21b586b08f3dde6613859712a9e0577dece564db))
+* 🎸 Configuration so viewer tools can nix handles ([#1304](https://github.com/OHIF/Viewers/issues/1304)) ([63594d3](https://github.com/OHIF/Viewers/commit/63594d36b0bdba59f0901095aed70b75fb05172d)), closes [#1223](https://github.com/OHIF/Viewers/issues/1223)
+* 🎸 DICOM SR STOW on MeasurementAPI ([#954](https://github.com/OHIF/Viewers/issues/954)) ([ebe1af8](https://github.com/OHIF/Viewers/commit/ebe1af8d4f75d2483eba869655906d7829bd9666)), closes [#758](https://github.com/OHIF/Viewers/issues/758)
+* 🎸 Expose extension config to modules ([#1279](https://github.com/OHIF/Viewers/issues/1279)) ([4ea239a](https://github.com/OHIF/Viewers/commit/4ea239a9535ef297e23387c186e537ab273744ea)), closes [#1268](https://github.com/OHIF/Viewers/issues/1268)
+* 🎸 Filter by url query param for seriesInstnaceUID ([#1117](https://github.com/OHIF/Viewers/issues/1117)) ([e208f2e](https://github.com/OHIF/Viewers/commit/e208f2e6a9c49b16dadead0a917f657cf023929a)), closes [#1118](https://github.com/OHIF/Viewers/issues/1118)
+* 🎸 Improve usability of Google Cloud adapter, including direct routes to studies ([#989](https://github.com/OHIF/Viewers/issues/989)) ([2bc361c](https://github.com/OHIF/Viewers/commit/2bc361cdca2b18bcb03c0eb0a7cd7ef43f83e3c8))
+* 🎸 MeasurementService ([#1314](https://github.com/OHIF/Viewers/issues/1314)) ([0c37a40](https://github.com/OHIF/Viewers/commit/0c37a406d963569af8c3be24c697dafd42712dfc))
+* 🎸 Only allow reconstruction of datasets that make sense ([#1010](https://github.com/OHIF/Viewers/issues/1010)) ([2d75e01](https://github.com/OHIF/Viewers/commit/2d75e01ea07f4322ccfaccd108089299be43d0df)), closes [#561](https://github.com/OHIF/Viewers/issues/561)
+* 🎸 Seg jump to slice + show/hide ([835f64d](https://github.com/OHIF/Viewers/commit/835f64d47a9994f6a25aaf3941a4974e215e7e7f))
+* 🎸 Update hotkeys and user preferences modal ([#1135](https://github.com/OHIF/Viewers/issues/1135)) ([e62f5f8](https://github.com/OHIF/Viewers/commit/e62f5f8dd28ab363f23671cd21cee115abb870ff)), closes [#923](https://github.com/OHIF/Viewers/issues/923)
+* 🎸 Update react-vtkjs-viewport usage to use requestPool ([#1984](https://github.com/OHIF/Viewers/issues/1984)) ([bb5f30c](https://github.com/OHIF/Viewers/commit/bb5f30ce2a0192d2e021beaaadfff22fd38e17b9))
+* Add new annotate tool using new dialog service ([#1211](https://github.com/OHIF/Viewers/issues/1211)) ([8fd3af1](https://github.com/OHIF/Viewers/commit/8fd3af1e137e793f1b482760a22591c64a072047))
+* add show scroll option to modal ([be494a7](https://github.com/OHIF/Viewers/commit/be494a7376d15777dbe598289c4ecdb9f48a6a48))
+* Added support for WADO servers built with static hosting (e.g. S3) ([#2566](https://github.com/OHIF/Viewers/issues/2566)) ([a046c6c](https://github.com/OHIF/Viewers/commit/a046c6c9017a84e5ead71d5113b5e892333b4130))
+* configuration to hook into XHR Error handling ([e96205d](https://github.com/OHIF/Viewers/commit/e96205de35e5bec14dc8a9a8509db3dd4e6ecdb6))
+* expose UiNotifications service ([#1172](https://github.com/OHIF/Viewers/issues/1172)) ([5c04e34](https://github.com/OHIF/Viewers/commit/5c04e34c8fb2394ab7acd9eb4f2ab12afeb2f255))
+* Issue 879 viewer route query param not filtering but promoting ([#1141](https://github.com/OHIF/Viewers/issues/1141)) ([b17f753](https://github.com/OHIF/Viewers/commit/b17f753e6222045252ef885e40233681541a32e1)), closes [#1118](https://github.com/OHIF/Viewers/issues/1118)
+* OHIF-1000: Study prefetcher ([#2466](https://github.com/OHIF/Viewers/issues/2466)) ([8f26045](https://github.com/OHIF/Viewers/commit/8f2604509d24092b721f1333289d838820d68cac))
+* Update to WADO Image Loader 4.0.3 to add dynamically imported WebAssembly codec support 🚀 ([#2537](https://github.com/OHIF/Viewers/issues/2537)) ([489d4b0](https://github.com/OHIF/Viewers/commit/489d4b0584f4657ceda1c5b9b68d5e9733827e47))
+* **log:** add new log service ([14d6454](https://github.com/OHIF/Viewers/commit/14d6454eafaa2ccb50e133c2945c9558052ea27e))
+* Allow a server requestOptions.auth to be a function that returns the Authorization header. ([#928](https://github.com/OHIF/Viewers/issues/928)) ([0064a4b](https://github.com/OHIF/Viewers/commit/0064a4b1cd6b1b30e339e39bf92292ad1917fb35))
+* Inject into Extension Modules / improve tests ([f63d8a7](https://github.com/OHIF/Viewers/commit/f63d8a73d867ad9dfd8ee0cad74edce180eb34f0))
+* New dialog service ([#1202](https://github.com/OHIF/Viewers/issues/1202)) ([f65639c](https://github.com/OHIF/Viewers/commit/f65639c2b0dab01decd20cab2cef4263cb4fab37))
+* Segmentations Settings UI - Phase 1 [#1391](https://github.com/OHIF/Viewers/issues/1391) ([#1392](https://github.com/OHIF/Viewers/issues/1392)) ([e8842cf](https://github.com/OHIF/Viewers/commit/e8842cf8aebde98db7fc123e4867c8288552331f)), closes [#1423](https://github.com/OHIF/Viewers/issues/1423)
+* set the authorization header for DICOMWeb requests if provided in query string ([#1646](https://github.com/OHIF/Viewers/issues/1646)) ([450c80b](https://github.com/OHIF/Viewers/commit/450c80b9d5f172be8b5713b422370360325a0afc))
+* Snapshot Download Tool ([#840](https://github.com/OHIF/Viewers/issues/840)) ([450e098](https://github.com/OHIF/Viewers/commit/450e0981a5ba054fcfcb85eeaeb18371af9088f8))
+* Use QIDO + WADO to load series metadata individually rather than the entire study metadata at once ([#953](https://github.com/OHIF/Viewers/issues/953)) ([9e10c2b](https://github.com/OHIF/Viewers/commit/9e10c2b2ded5dcf5c05779ca9ef9a7fc453750ad))
+* visualize overlapping segments in cornerstone ([#2185](https://github.com/OHIF/Viewers/issues/2185)) ([29fceac](https://github.com/OHIF/Viewers/commit/29fceacee97d51f1952a0f6b574c66596d32c201))
+
+
+* feat!: Ability to configure cornerstone tools via extension configuration (#1229) ([55a5806](https://github.com/OHIF/Viewers/commit/55a580659ecb74ca6433461d8f9a05c2a2b69533)), closes [#1229](https://github.com/OHIF/Viewers/issues/1229)
+
+
+### BREAKING CHANGES
+
+* modifies the exposed react <App /> components props. The contract for providing configuration for the app has changed. Please reference updated documentation for guidance.
+* DICOM Seg
+
+
+
+
+
+
 ## [2.16.35](https://github.com/OHIF/Viewers/compare/@ohif/core@2.16.34...@ohif/core@2.16.35) (2022-12-21)
 
 **Note:** Version bump only for package @ohif/core

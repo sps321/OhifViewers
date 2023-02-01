@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.7.15-alpha.0 (2023-02-01)
+
+
+### Bug Fixes
+
+* **dicom-html:** Add parsed dicom meta info section ([#2419](https://github.com/OHIF/Viewers/issues/2419)) ([403688b](https://github.com/OHIF/Viewers/commit/403688b18c52468fc1101166ec0c1734fb710039))
+* 🐛 - Put guards in all places that a cornerstone re-render ([#1899](https://github.com/OHIF/Viewers/issues/1899)) ([451f7ea](https://github.com/OHIF/Viewers/commit/451f7eab9258e7a193eb362e0926b13aedc4b3c9))
+* 🐛 Disable seg panel when data for seg unavailable ([#1732](https://github.com/OHIF/Viewers/issues/1732)) ([698e900](https://github.com/OHIF/Viewers/commit/698e900b85121d3c2a46747c443ef69fb7a8c95b)), closes [#1728](https://github.com/OHIF/Viewers/issues/1728)
+* 🐛 Fix RT Panel hide/show and Fix looping load errors ([#1877](https://github.com/OHIF/Viewers/issues/1877)) ([e7cc735](https://github.com/OHIF/Viewers/commit/e7cc735c03d02eeb0d3af4ba02c15ed4f81bbec2))
+* 🐛 Fix seg color load ([#1724](https://github.com/OHIF/Viewers/issues/1724)) ([c4f84b1](https://github.com/OHIF/Viewers/commit/c4f84b1174d04ba84d37ed89b6d7ab541be28181))
+* 🐛 Load default display set when no time metadata ([#1684](https://github.com/OHIF/Viewers/issues/1684)) ([f7b8b6a](https://github.com/OHIF/Viewers/commit/f7b8b6a41c4626084ef56b0fdf7363e914b143c4)), closes [#1683](https://github.com/OHIF/Viewers/issues/1683)
+* 🐛 Proper error handling for derived display sets ([#1708](https://github.com/OHIF/Viewers/issues/1708)) ([5b20d8f](https://github.com/OHIF/Viewers/commit/5b20d8f323e4b3ef9988f2f2ab672d697b6da409))
+* panel issues and mpr button (IDC2122-IDC2117) ([32022f5](https://github.com/OHIF/Viewers/commit/32022f51f2d24f53f4c98188980db038a6dfe76c))
+
+
+### Features
+
+* 🎸 1729 - error boundary wrapper ([#1764](https://github.com/OHIF/Viewers/issues/1764)) ([c02b232](https://github.com/OHIF/Viewers/commit/c02b232b0cc24f38af5d5e3831d987d048e60ada))
+* 🎸 Add support for POINT and OPEN_PLANAR for RT ([0e87ab3](https://github.com/OHIF/Viewers/commit/0e87ab37c29fcf9af74bbcefca854c6e6b8707bc))
+* 🎸 Seg jump to slice + show/hide ([835f64d](https://github.com/OHIF/Viewers/commit/835f64d47a9994f6a25aaf3941a4974e215e7e7f))
+* 🎸 Update react-vtkjs-viewport usage to use requestPool ([#1984](https://github.com/OHIF/Viewers/issues/1984)) ([bb5f30c](https://github.com/OHIF/Viewers/commit/bb5f30ce2a0192d2e021beaaadfff22fd38e17b9))
+* Update approach to better handle rtdose instead of disabling panel ([f3cecf1](https://github.com/OHIF/Viewers/commit/f3cecf129b16f8d24d239aa44fdff7f46e6ba683))
+* Update to WADO Image Loader 4.0.3 to add dynamically imported WebAssembly codec support 🚀 ([#2537](https://github.com/OHIF/Viewers/issues/2537)) ([489d4b0](https://github.com/OHIF/Viewers/commit/489d4b0584f4657ceda1c5b9b68d5e9733827e47))
+* visualize overlapping segments in cornerstone ([#2185](https://github.com/OHIF/Viewers/issues/2185)) ([29fceac](https://github.com/OHIF/Viewers/commit/29fceacee97d51f1952a0f6b574c66596d32c201))
+
+
+
+
+
+
 ## [0.7.14](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-rt@0.7.13...@ohif/extension-dicom-rt@0.7.14) (2022-12-21)
 
 **Note:** Version bump only for package @ohif/extension-dicom-rt

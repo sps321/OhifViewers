@@ -3,6 +3,80 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.12.17-alpha.0 (2023-02-01)
+
+
+### Bug Fixes
+
+* changed new image handler conditional for 0 edge case ([#2338](https://github.com/OHIF/Viewers/issues/2338)) ([b8ae92c](https://github.com/OHIF/Viewers/commit/b8ae92c2d4f733b3ca89826118029685650b396a))
+* **dicom-html:** Add parsed dicom meta info section ([#2419](https://github.com/OHIF/Viewers/issues/2419)) ([403688b](https://github.com/OHIF/Viewers/commit/403688b18c52468fc1101166ec0c1734fb710039))
+* 🐛 - Put guards in all places that a cornerstone re-render ([#1899](https://github.com/OHIF/Viewers/issues/1899)) ([451f7ea](https://github.com/OHIF/Viewers/commit/451f7eab9258e7a193eb362e0926b13aedc4b3c9))
+* 🐛 1241: Make Plugin switch part of ToolbarModule ([#1322](https://github.com/OHIF/Viewers/issues/1322)) ([6540e36](https://github.com/OHIF/Viewers/commit/6540e36818944ac2eccc696186366ae495b33a04)), closes [#1241](https://github.com/OHIF/Viewers/issues/1241)
+* 🐛 Add DicomLoaderService & FileLoaderService to fix SR, PDF, and SEG support in local file and WADO-RS-only use cases ([#862](https://github.com/OHIF/Viewers/issues/862)) ([e7e1a8a](https://github.com/OHIF/Viewers/commit/e7e1a8a6cdfcc333c7d2723e156a2760f8fa722e)), closes [#838](https://github.com/OHIF/Viewers/issues/838)
+* 🐛 add WwwcRegionTool to cornerstone tools initialization ([#1302](https://github.com/OHIF/Viewers/issues/1302)) ([d5bf728](https://github.com/OHIF/Viewers/commit/d5bf72851a32dff9fd3fc09332ea5250bc7e6114))
+* 🐛 Disable seg panel when data for seg unavailable ([#1732](https://github.com/OHIF/Viewers/issues/1732)) ([698e900](https://github.com/OHIF/Viewers/commit/698e900b85121d3c2a46747c443ef69fb7a8c95b)), closes [#1728](https://github.com/OHIF/Viewers/issues/1728)
+* 🐛 Fix seg color load ([#1724](https://github.com/OHIF/Viewers/issues/1724)) ([c4f84b1](https://github.com/OHIF/Viewers/commit/c4f84b1174d04ba84d37ed89b6d7ab541be28181))
+* 🐛 Infinite frame index change when quickly jumping between ([#1734](https://github.com/OHIF/Viewers/issues/1734)) ([a830577](https://github.com/OHIF/Viewers/commit/a8305772d0fbec506549ad7ea08504a8bc3a4f39)), closes [#1733](https://github.com/OHIF/Viewers/issues/1733)
+* 🐛 Multiframe fix ([#1661](https://github.com/OHIF/Viewers/issues/1661)) ([7120561](https://github.com/OHIF/Viewers/commit/71205618ecb8b592247c5acb32284bfe7e18fce5))
+* 🐛 Proper error handling for derived display sets ([#1708](https://github.com/OHIF/Viewers/issues/1708)) ([5b20d8f](https://github.com/OHIF/Viewers/commit/5b20d8f323e4b3ef9988f2f2ab672d697b6da409))
+* 🐛 set tools bidirectional, eraser and annotate command ([#1020](https://github.com/OHIF/Viewers/issues/1020)) ([a28984e](https://github.com/OHIF/Viewers/commit/a28984ef1f8d0b5c1e82a669fbbee36616c19505))
+* Add a fallback metadata provider which pulls metadata from WADO-… ([#1158](https://github.com/OHIF/Viewers/issues/1158)) ([31b1adf](https://github.com/OHIF/Viewers/commit/31b1adfa5993d6c8e3e9c8b03fa9856f2621b037))
+* Add some code splitting for PWA build ([#937](https://github.com/OHIF/Viewers/issues/937)) ([8938035](https://github.com/OHIF/Viewers/commit/89380353d270cbb89d0c60290a1210f7ac8baa7a))
+* bump cornerstone-tools version in peerDeps ([4afc88c](https://github.com/OHIF/Viewers/commit/4afc88c0e55a84778f5baa8bc2cfadac230099c4))
+* bump react-cornerstone-viewport version to address critical issue ([#1473](https://github.com/OHIF/Viewers/issues/1473)) ([ee80e02](https://github.com/OHIF/Viewers/commit/ee80e026610442e94caf5e4e3e4d193220cd0ece))
+* Creating 2 commands to activate zoom tool and also to move between displaySets ([#1446](https://github.com/OHIF/Viewers/issues/1446)) ([06a4af0](https://github.com/OHIF/Viewers/commit/06a4af06faaecf6fa06ccd90cdfa879ee8d53053))
+* measurementsAPI issue caused by production build ([#842](https://github.com/OHIF/Viewers/issues/842)) ([49d3439](https://github.com/OHIF/Viewers/commit/49d343941e236e442114e59861a373c7edb0b1fb))
+* Remove Eraser and ROI Window ([6c950a9](https://github.com/OHIF/Viewers/commit/6c950a9669f7fbf3c46e48679fa26ee514824156))
+* simplify runtime-extension usage ([ac5dbda](https://github.com/OHIF/Viewers/commit/ac5dbda3b27e5c9600baa2c9d2b52947282e3399))
+* Updated react-cornerstone-viewport to version 4.0.2 ([#2001](https://github.com/OHIF/Viewers/issues/2001)) ([59ab68b](https://github.com/OHIF/Viewers/commit/59ab68b4edbfec010170c4429c300a53f688bf94))
+* version bump issue ([#962](https://github.com/OHIF/Viewers/issues/962)) ([c80ea17](https://github.com/OHIF/Viewers/commit/c80ea17cc2dd931de5f4585a7e6afc4095e03f2e))
+* version bump issue ([#963](https://github.com/OHIF/Viewers/issues/963)) ([e607ed2](https://github.com/OHIF/Viewers/commit/e607ed2aa07fb9a08d0dfcfb44b8d10bdfb67a66)), closes [#962](https://github.com/OHIF/Viewers/issues/962)
+
+
+### Features
+
+* [#1342](https://github.com/OHIF/Viewers/issues/1342) - Window level tab ([#1429](https://github.com/OHIF/Viewers/issues/1429)) ([ebc01a8](https://github.com/OHIF/Viewers/commit/ebc01a8ca238d5a3437b44d81f75aa8a5e8d0574))
+* 🎸 1729 - error boundary wrapper ([#1764](https://github.com/OHIF/Viewers/issues/1764)) ([c02b232](https://github.com/OHIF/Viewers/commit/c02b232b0cc24f38af5d5e3831d987d048e60ada))
+* 🎸 Configuration so viewer tools can nix handles ([#1304](https://github.com/OHIF/Viewers/issues/1304)) ([63594d3](https://github.com/OHIF/Viewers/commit/63594d36b0bdba59f0901095aed70b75fb05172d)), closes [#1223](https://github.com/OHIF/Viewers/issues/1223)
+* 🎸 DICOM SR STOW on MeasurementAPI ([#954](https://github.com/OHIF/Viewers/issues/954)) ([ebe1af8](https://github.com/OHIF/Viewers/commit/ebe1af8d4f75d2483eba869655906d7829bd9666)), closes [#758](https://github.com/OHIF/Viewers/issues/758)
+* 🎸 MeasurementService ([#1314](https://github.com/OHIF/Viewers/issues/1314)) ([0c37a40](https://github.com/OHIF/Viewers/commit/0c37a406d963569af8c3be24c697dafd42712dfc))
+* 🎸 Seg jump to slice + show/hide ([835f64d](https://github.com/OHIF/Viewers/commit/835f64d47a9994f6a25aaf3941a4974e215e7e7f))
+* 🎸 Update react-vtkjs-viewport usage to use requestPool ([#1984](https://github.com/OHIF/Viewers/issues/1984)) ([bb5f30c](https://github.com/OHIF/Viewers/commit/bb5f30ce2a0192d2e021beaaadfff22fd38e17b9))
+* 🎸 Upgraded to cornerstoneTools 4.0 ([86adb51](https://github.com/OHIF/Viewers/commit/86adb5113a8a678eab20cd636c528af90add3daa))
+* Add new annotate tool using new dialog service ([#1211](https://github.com/OHIF/Viewers/issues/1211)) ([8fd3af1](https://github.com/OHIF/Viewers/commit/8fd3af1e137e793f1b482760a22591c64a072047))
+* configuration to hook into XHR Error handling ([e96205d](https://github.com/OHIF/Viewers/commit/e96205de35e5bec14dc8a9a8509db3dd4e6ecdb6))
+* expose UiNotifications service ([#1172](https://github.com/OHIF/Viewers/issues/1172)) ([5c04e34](https://github.com/OHIF/Viewers/commit/5c04e34c8fb2394ab7acd9eb4f2ab12afeb2f255))
+* Multiple fixes and implementation changes to react-cornerstone-viewport ([1cc94f3](https://github.com/OHIF/Viewers/commit/1cc94f36a77cccb34cab68dcd7f991241801290f))
+* New dialog service ([#1202](https://github.com/OHIF/Viewers/issues/1202)) ([f65639c](https://github.com/OHIF/Viewers/commit/f65639c2b0dab01decd20cab2cef4263cb4fab37))
+* OHIF-1000: Study prefetcher ([#2466](https://github.com/OHIF/Viewers/issues/2466)) ([8f26045](https://github.com/OHIF/Viewers/commit/8f2604509d24092b721f1333289d838820d68cac))
+* Segmentations Settings UI - Phase 1 [#1391](https://github.com/OHIF/Viewers/issues/1391) ([#1392](https://github.com/OHIF/Viewers/issues/1392)) ([e8842cf](https://github.com/OHIF/Viewers/commit/e8842cf8aebde98db7fc123e4867c8288552331f)), closes [#1423](https://github.com/OHIF/Viewers/issues/1423)
+* Snapshot Download Tool ([#840](https://github.com/OHIF/Viewers/issues/840)) ([450e098](https://github.com/OHIF/Viewers/commit/450e0981a5ba054fcfcb85eeaeb18371af9088f8))
+* Update to WADO Image Loader 4.0.3 to add dynamically imported WebAssembly codec support 🚀 ([#2537](https://github.com/OHIF/Viewers/issues/2537)) ([489d4b0](https://github.com/OHIF/Viewers/commit/489d4b0584f4657ceda1c5b9b68d5e9733827e47))
+* visualize overlapping segments in cornerstone ([#2185](https://github.com/OHIF/Viewers/issues/2185)) ([29fceac](https://github.com/OHIF/Viewers/commit/29fceacee97d51f1952a0f6b574c66596d32c201))
+* **Annotate:** Add annotate tool back to toolbar ([26be967](https://github.com/OHIF/Viewers/commit/26be96783d3bc88c988c20f852c2fe5af6b89a70))
+* **BidirectionalTool:** Add BidrectionalTool to "more" menu ([#911](https://github.com/OHIF/Viewers/issues/911)) ([e40cbae](https://github.com/OHIF/Viewers/commit/e40cbae113ac878a7ea7fbc3996b9950495921c4))
+* **EraserTool:** add eraserTool to @ohif/extension-cornerstone ([#912](https://github.com/OHIF/Viewers/issues/912)) ([698d274](https://github.com/OHIF/Viewers/commit/698d274c64e9cf92ccd35af7fc78c90c54a62fc9))
+
+
+### Performance Improvements
+
+* **stackPrefetch:** Added stackPrefetch config with 20 max concurrent requests ([#2000](https://github.com/OHIF/Viewers/issues/2000)) ([3b02a06](https://github.com/OHIF/Viewers/commit/3b02a06f5e250660edde4862ce44147db3dc3ab9))
+
+
+* feat!: Ability to configure cornerstone tools via extension configuration (#1229) ([55a5806](https://github.com/OHIF/Viewers/commit/55a580659ecb74ca6433461d8f9a05c2a2b69533)), closes [#1229](https://github.com/OHIF/Viewers/issues/1229)
+
+
+### BREAKING CHANGES
+
+* modifies the exposed react <App /> components props. The contract for providing configuration for the app has changed. Please reference updated documentation for guidance.
+* DICOM Seg
+* n
+
+
+
+
+
+
 ## [2.12.16](https://github.com/OHIF/Viewers/compare/@ohif/extension-cornerstone@2.12.15...@ohif/extension-cornerstone@2.12.16) (2022-12-21)
 
 **Note:** Version bump only for package @ohif/extension-cornerstone

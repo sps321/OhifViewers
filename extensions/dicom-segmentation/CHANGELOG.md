@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.7.22-alpha.0 (2023-02-01)
+
+
+### Bug Fixes
+
+* [#2964](https://github.com/OHIF/Viewers/issues/2964) Reword message for segmentation error loading due to orientation tolerance ([#3017](https://github.com/OHIF/Viewers/issues/3017)) ([597ac11](https://github.com/OHIF/Viewers/commit/597ac11c4daee1b1e14148804551e20611cfef08))
+* [#2964](https://github.com/OHIF/Viewers/issues/2964) Update message for segmentation error loading due to orientation tolerance ([#2982](https://github.com/OHIF/Viewers/issues/2982)) ([545161d](https://github.com/OHIF/Viewers/commit/545161d5e8d92bb6652f17dc24a36dac8aa7b3a4))
+* **dicom-html:** Add parsed dicom meta info section ([#2419](https://github.com/OHIF/Viewers/issues/2419)) ([403688b](https://github.com/OHIF/Viewers/commit/403688b18c52468fc1101166ec0c1734fb710039))
+* 🐛 Disable seg panel when data for seg unavailable ([#1732](https://github.com/OHIF/Viewers/issues/1732)) ([698e900](https://github.com/OHIF/Viewers/commit/698e900b85121d3c2a46747c443ef69fb7a8c95b)), closes [#1728](https://github.com/OHIF/Viewers/issues/1728)
+* 🐛 Dropdown not updating when selecting segment ([#1675](https://github.com/OHIF/Viewers/issues/1675)) ([20e366f](https://github.com/OHIF/Viewers/commit/20e366ffbd76781f48dc99c9f59e24b255b5e5df)), closes [#1669](https://github.com/OHIF/Viewers/issues/1669)
+* 🐛 Fix RT Panel hide/show and Fix looping load errors ([#1877](https://github.com/OHIF/Viewers/issues/1877)) ([e7cc735](https://github.com/OHIF/Viewers/commit/e7cc735c03d02eeb0d3af4ba02c15ed4f81bbec2))
+* 🐛 Fix seg color load ([#1724](https://github.com/OHIF/Viewers/issues/1724)) ([c4f84b1](https://github.com/OHIF/Viewers/commit/c4f84b1174d04ba84d37ed89b6d7ab541be28181))
+* 🐛 Proper error handling for derived display sets ([#1708](https://github.com/OHIF/Viewers/issues/1708)) ([5b20d8f](https://github.com/OHIF/Viewers/commit/5b20d8f323e4b3ef9988f2f2ab672d697b6da409))
+* segmentation not loading ([#1566](https://github.com/OHIF/Viewers/issues/1566)) ([4a7ce1c](https://github.com/OHIF/Viewers/commit/4a7ce1c09324d74c61048393e3a2427757e4001a))
+
+
+### Features
+
+* Update to WADO Image Loader 4.0.3 to add dynamically imported WebAssembly codec support 🚀 ([#2537](https://github.com/OHIF/Viewers/issues/2537)) ([489d4b0](https://github.com/OHIF/Viewers/commit/489d4b0584f4657ceda1c5b9b68d5e9733827e47))
+* **log:** add new log service ([14d6454](https://github.com/OHIF/Viewers/commit/14d6454eafaa2ccb50e133c2945c9558052ea27e))
+* 🎸 1729 - error boundary wrapper ([#1764](https://github.com/OHIF/Viewers/issues/1764)) ([c02b232](https://github.com/OHIF/Viewers/commit/c02b232b0cc24f38af5d5e3831d987d048e60ada))
+* 🎸 Seg jump to slice + show/hide ([835f64d](https://github.com/OHIF/Viewers/commit/835f64d47a9994f6a25aaf3941a4974e215e7e7f))
+* 🎸 Update react-vtkjs-viewport usage to use requestPool ([#1984](https://github.com/OHIF/Viewers/issues/1984)) ([bb5f30c](https://github.com/OHIF/Viewers/commit/bb5f30ce2a0192d2e021beaaadfff22fd38e17b9))
+* Segmentations Settings UI - Phase 1 [#1391](https://github.com/OHIF/Viewers/issues/1391) ([#1392](https://github.com/OHIF/Viewers/issues/1392)) ([e8842cf](https://github.com/OHIF/Viewers/commit/e8842cf8aebde98db7fc123e4867c8288552331f)), closes [#1423](https://github.com/OHIF/Viewers/issues/1423)
+* visualize overlapping segments in cornerstone ([#2185](https://github.com/OHIF/Viewers/issues/2185)) ([29fceac](https://github.com/OHIF/Viewers/commit/29fceacee97d51f1952a0f6b574c66596d32c201))
+
+
+
+
+
+
 ## [0.7.21](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-segmentation@0.7.20...@ohif/extension-dicom-segmentation@0.7.21) (2023-01-17)
 
 **Note:** Version bump only for package @ohif/extension-dicom-segmentation
